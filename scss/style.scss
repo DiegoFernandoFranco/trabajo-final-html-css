@@ -1,0 +1,117 @@
+@import "./base/variables";
+@import "./base/mixin";
+@import "./base/extend";
+@import "./base/maps";
+@import "./components/global";
+@import "./components/contacto";
+@import "./components/navbar";
+@import "./components/flecha-top";
+@import "./components/footer";
+@font-face {
+    font-family: "Break";
+    src: url("./font/Break.ttf") format("truetype");
+}
+// ****************************
+.imagen-circular{
+    
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 1px rgb(194, 186, 186);
+    
+    height: 300px;
+    width: 300px;
+
+    box-shadow: 4px 6px 15px #f54d0a;
+    
+}
+
+.oracion-gatuna {
+    text-align: justify;;
+}
+// **************************
+.btn-color {
+    background-color: $tema-color;
+    color: white;
+    
+}
+.btn-color:hover {
+    background-color: greenyellow !important;
+}
+.nav-color {    
+    background: linear-gradient(90deg, rgba(146, 147, 153, 0.597) 0%, rgba(244,244,246,1) 47%, rgba(146, 147, 153, 0.597) 100%);
+}
+
+.nav-link {
+    color: $tema-color!important;
+    font-weight: bold;
+}
+.nav-item a:hover {
+    color: white!important;
+    background-color: $tema-color;
+    
+
+    /* font-weight: bolder;*/
+}
+
+
+
+.contenido {
+    text-align: center;
+    padding: 30px 50px;
+
+    & p {
+        /*text-align:justify;
+        padding: 30px 50px;*/
+        @include contenido-texto();
+    }
+}
+
+.container-fluid h1 {
+    text-align: center;
+}
+
+.video-parent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+}
+.escobar-video {
+    width: 400px;
+    text-align: center;
+}
+
+.escobar-imagen{
+    width: 533px;
+    text-align: center;
+}
+
+
+.contacto-acomodar {
+    @extend %flexi-vertical;
+    align-items: center;
+}
+
+.siempre-al-top {
+    display: inline;
+    left: 100%;
+    position:sticky;
+    bottom:160px;    
+    margin-top:100vh;
+    text-decoration: none;    
+    padding: 100x 10px;    
+    color: black;
+    border-radius: 0px;    
+    
+    & span{
+        font-size: 50px;
+        padding: 0;
+        margin: 0;
+    }
+
+        &:hover {
+            color:$tema-color;
+        }
+        
+}

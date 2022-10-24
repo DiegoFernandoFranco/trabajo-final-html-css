@@ -1,0 +1,39 @@
+html {
+    scroll-padding-top: 110px; /* Es Necesario este padding por el menu fijo, sino la pagina continua debajo del navbar */
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.todo {
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: map-get($map: $titulo-h1, $key:colores-letras);
+    font-weight: map-get($map: $titulo-h1, $key:fuente-peso );
+    
+}
+
+/* Media Query solamente para las imagenes de la pag. personalizadas */
+@media only screen and (max-width: 960px){
+    .video-parent {        
+        flex-direction: column;
+        align-items: center;
+    }
+    .escobar-imagen {
+        width: 316px;
+
+    }
+    .escobar-video{
+        width: 316px;
+        margin-bottom: 20px;
+    }
+
+    .siempre-al-top {
+        margin-left: 80vw;
+    }
+}

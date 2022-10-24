@@ -1,0 +1,182 @@
+.contacto-acomodar {
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  scroll-padding-top: 110px; /* Es Necesario este padding por el menu fijo, sino la pagina continua debajo del navbar */
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.todo {
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(124, 0, 128);
+  font-weight: bold;
+}
+
+/* Media Query solamente para las imagenes de la pag. personalizadas */
+@media only screen and (max-width: 960px) {
+  .video-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .escobar-imagen {
+    width: 316px;
+  }
+  .escobar-video {
+    width: 316px;
+    margin-bottom: 20px;
+  }
+  .siempre-al-top {
+    margin-left: 80vw;
+  }
+}
+.centrado {
+  text-align: center;
+}
+
+.btn {
+  color: rgb(124, 0, 128);
+  border-color: rgb(124, 0, 128);
+}
+
+.btn:hover {
+  background-color: rgb(124, 0, 128) !important;
+  color: white !important;
+}
+
+.material-symbols-outlined:hover {
+  animation: rebote 1.5s ease-in-out;
+}
+
+@keyframes rebote {
+  0%, 20%, 60%, 80%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    /* text-shadow: 20px 20px 20px rgb(253, 0, 0); */
+  }
+  40% {
+    transform: translateY(-80px);
+    /* color:rgb(3, 3, 3); */
+  }
+  80% {
+    transform: translateY(-40px);
+  }
+}
+.redes-sociales-logos {
+  margin: 30px;
+}
+
+.redes-sociales-logos img {
+  padding: 0 30px;
+  height: 50px;
+  filter: invert(108%);
+}
+
+@font-face {
+  font-family: "Break";
+  src: url("./font/Break.ttf") format("truetype");
+}
+.imagen-circular {
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 1px rgb(194, 186, 186);
+  height: 300px;
+  width: 300px;
+  box-shadow: 4px 6px 15px #f54d0a;
+}
+
+.oracion-gatuna {
+  text-align: justify;
+}
+
+.btn-color {
+  background-color: rgb(124, 0, 128);
+  color: white;
+}
+
+.btn-color:hover {
+  background-color: greenyellow !important;
+}
+
+.nav-color {
+  background: linear-gradient(90deg, rgba(146, 147, 153, 0.597) 0%, rgb(244, 244, 246) 47%, rgba(146, 147, 153, 0.597) 100%);
+}
+
+.nav-link {
+  color: rgb(124, 0, 128) !important;
+  font-weight: bold;
+}
+
+.nav-item a:hover {
+  color: white !important;
+  background-color: rgb(124, 0, 128);
+  /* font-weight: bolder;*/
+}
+
+.contenido {
+  text-align: center;
+  padding: 30px 50px;
+}
+.contenido p {
+  /*text-align:justify;
+  padding: 30px 50px;*/
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 30px 30px;
+}
+
+.container-fluid h1 {
+  text-align: center;
+}
+
+.video-parent {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.escobar-video {
+  width: 400px;
+  text-align: center;
+}
+
+.escobar-imagen {
+  width: 533px;
+  text-align: center;
+}
+
+.contacto-acomodar {
+  align-items: center;
+}
+
+.siempre-al-top {
+  display: inline;
+  left: 100%;
+  position: sticky;
+  bottom: 160px;
+  margin-top: 100vh;
+  text-decoration: none;
+  padding: 100x 10px;
+  color: black;
+  border-radius: 0px;
+}
+.siempre-al-top span {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+.siempre-al-top:hover {
+  color: rgb(124, 0, 128);
+}
+
+/*# sourceMappingURL=style.css.map */

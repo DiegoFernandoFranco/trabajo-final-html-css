@@ -1,0 +1,9 @@
+.btn{
+    color: $tema-color;
+    border-color: $tema-color;
+    
+}
+.btn:hover {
+    background-color: $tema-color !important;
+    color: white !important;
+}
